@@ -18,17 +18,12 @@ BASE_DIR = os.path.split(os.path.dirname(os.path.abspath(__file__)))[0]
 
 # Константы для API Django проекта
 BASE_HOST_URL = os.environ.get('BASE_HOST_URL', 'http://127.0.0.1:8000/')
-WRITE_USR_URL = f'{BASE_HOST_URL}mytlg/write_usr/'
-SET_ACC_RUN_FLAG_URL = f'{BASE_HOST_URL}mytlg/set_acc_run_flag/'
-GET_CHANNELS_URL = f'{BASE_HOST_URL}mytlg/get_channels/'
-GET_SETTINGS_URL = f'{BASE_HOST_URL}mytlg/get_settings/'
-GET_RELATED_NEWS = f'{BASE_HOST_URL}mytlg/related_news/'
-WRITE_SUBSCRIPTION_RSLT = f'{BASE_HOST_URL}mytlg/write_subs_rslt/'
-UPDATE_CHANNELS = f'{BASE_HOST_URL}mytlg/update_channels/'
+WRITE_USR_URL = f'{BASE_HOST_URL}osa_gpt/write_usr/'
+GET_ANSWER_GPT = f'{BASE_HOST_URL}osa_gpt/answer_gpt/'
 
 # Ссылки на веб-страницы
-START_SETTINGS_FORM = f'{BASE_HOST_URL}mytlg/start_settings/'
-WRITE_INTERESTS_FORM = f'{BASE_HOST_URL}mytlg/write_interests/'
+NEW_APPLICATION_FORM_URL = f'{BASE_HOST_URL}osa_gpt/new_application/'
+NEW_APPLICATION_FORM_URL = 'https://ya.ru'  # Todo: удалить, это для теста
 
 
 # Настройки логгера
