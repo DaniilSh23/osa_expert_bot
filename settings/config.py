@@ -22,6 +22,7 @@ WRITE_USR_URL = f'{BASE_HOST_URL}osa_gpt/write_usr/'
 GET_ANSWER_GPT = f'{BASE_HOST_URL}osa_gpt/answer_gpt/'
 
 # Ссылки на веб-страницы
+BASE_FORM_PAGE_URL = os.environ.get('BASE_FORM_PAGE_URL', 'https://danyasevas111.fvds.ru/')
 NEW_APPLICATION_FORM_URL = f'https://danyasevas111.fvds.ru/osa_gpt/new_application/'
 # NEW_APPLICATION_FORM_URL = 'https://ya.ru'  # Todo: удалить, это для теста
 
