@@ -52,6 +52,8 @@ async def ai_answer_handler(_, update: Message):
     if not gpt_answer:
         await update.reply_text(text=f'🤷‍♂️ К сожалению, <b>ИИ не смог сгенерировать ответ</b> из-за перегрузки '
                                      f'сервера. Пожалуйста, попробуйте повторить запрос позже ⌛️')
+        return
+
     await update.reply_text(
         text=f"<b>Ответ искусственного интеллекта '🐝 OSA_GPT':</b>\n\n{gpt_answer.get('gpt_answer')}",
         reply_markup=await form_webapp_kbrd(form_link=NEW_APPLICATION_FORM_URL,
