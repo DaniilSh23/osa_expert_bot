@@ -26,6 +26,7 @@ if __name__ == '__main__':
 
         logger.info('LAUNCH THIS FU... BOT NOW!!!')
         Client("test_bot", plugins=plugins).run()
+        # Client("prod_bot", plugins=plugins).run()
     except Exception as error:
         logger.error(f'BOT CRASHED WITH SOME ERROR\n\t{error}')
     except (KeyboardInterrupt, SystemExit):

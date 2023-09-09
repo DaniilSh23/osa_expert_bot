@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-TOKEN = os.environ.get('TOKEN', '5265303938:AAE1daGp-VJR0R15J9tHksR38hQlbCXMYdU')
+TOKEN = os.environ.get('TOKEN', '123456:dadwdawd')
 BOT_USERNAME = os.environ.get('BOT_USERNAME', 'CourseTrainBot')
 API_ID = os.environ.get('API_ID', '1234567890')
 API_HASH = os.environ.get('API_HASH', 'какой-то там хэш')
@@ -22,8 +22,8 @@ WRITE_USR_URL = f'{BASE_HOST_URL}osa_gpt/write_usr/'
 GET_ANSWER_GPT = f'{BASE_HOST_URL}osa_gpt/answer_gpt/'
 
 # Ссылки на веб-страницы
-NEW_APPLICATION_FORM_URL = f'{BASE_HOST_URL}osa_gpt/new_application/'
-NEW_APPLICATION_FORM_URL = 'https://ya.ru'  # Todo: удалить, это для теста
+NEW_APPLICATION_FORM_URL = f'https://danyasevas111.fvds.ru/osa_gpt/new_application/'
+# NEW_APPLICATION_FORM_URL = 'https://ya.ru'  # Todo: удалить, это для теста
 
 
 # Настройки логгера
