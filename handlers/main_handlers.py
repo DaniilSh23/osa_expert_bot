@@ -37,7 +37,7 @@ async def start_handler(_, update):
         )
 
 
-@Client.on_message(filters.private)
+@Client.on_message(filters.private & filters.incoming)
 async def ai_answer_handler(_, update: Message):
     """
     Хэндлер для обработки вопросов пользователей и ответов через ChatGPT.
